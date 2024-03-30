@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css">
+    
+    <title>Delivery 2.0</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+                src="./assets/logo.png" 
+                alt="Logo Pirates burger"
+                class="w-32 h-32 rounded-xl shadow-lg hover:scale-110 duration-200"
+            >
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">
+                Pirates burgers
+            </h1>
+            <span class="text-white font-medium">
+                <i class="fa-solid fa-location-dot"></i>
+                Rua Projetada, Boa Vista, Caruaru-PE
+            </span>
+            <span class="text-white font-medium">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                35min - 45min
+            </span>
+            <div 
+                class="bg-green-400 px-4 py-1 rounded-lg mt-4 cursor-pointer"
+                id="date-span"
+            >
+                <span class="text-white font-medium">
+                    Aberto
+                </span>
+            </div>
+        </div>
+        <!-- MODAL OPENING HOURS -->
+        <!-- END MODAL OPENING HOURS -->
+    </header>
+    <!-- END HEADER -->
+    <!-- SEARCH INPUT -->
+    <div class="w-full flex justify-center items-center mt-4">
+        <div class="h-[3rem] w-[80%] bg-white rounded-xl flex p-[6px] gap-5">
+            <div class="h-8 w-8 m-1 bg-red-500 rounded-[6px] flex justify-center items-center">
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
+            </div>
+            <input 
+                type="text"
+                placeholder="O que deseja comer?"
+                class="w-full bg-transparent focus-visible:outline-none"
+            >
+        </div>
+    </div>
+    <!-- END INPUT -->
+    <!-- CATEGORYS -->
+    <div class="flex justify-center items-center h-full m-4 gap-5">
+        <h3 
+            class="categorys bg-red-500 text-white px-4 py-2 rounded-lg font-medium cursor-pointer"
+        >
+            Burgers
+        </h3>
+        <h3 
+            class="categorys bg-red-500 text-white px-4 py-2 rounded-lg font-medium cursor-pointer"
+        >
+            Bebidas
+        </h3>
+    </div>
+    <!-- END CATEGORYS -->
+</body>
+</html>
