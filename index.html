@@ -43,14 +43,15 @@
     <!-- END HEADER -->
     <!-- SEARCH INPUT -->
     <div class="w-full flex justify-center items-center mt-4">
-        <div class="h-[3rem] w-[80%] bg-white rounded-xl flex p-[6px] gap-5">
-            <div class="h-8 w-8 m-1 bg-red-500 rounded-[6px] flex justify-center items-center">
+        <div class="h-[3rem] w-[90%] bg-white rounded-xl flex gap-2">
+            <div class="h-8 w-8 m-2 bg-[#EF3D4D] rounded-[6px] flex justify-center items-center">
                 <i class="fa-solid fa-magnifying-glass text-white"></i>
             </div>
             <input 
                 type="text"
                 placeholder="O que deseja comer?"
                 class="w-full bg-transparent focus-visible:outline-none"
+                id="search-input"
             >
         </div>
     </div>
@@ -58,16 +59,143 @@
     <!-- CATEGORYS -->
     <div class="flex justify-center items-center h-full m-4 gap-5">
         <h3 
-            class="categorys bg-red-500 text-white px-4 py-2 rounded-lg font-medium cursor-pointer"
+            class="categorys bg-[#EF3D4D] text-white px-4 py-2 rounded-lg font-medium cursor-pointer"
         >
             Burgers
         </h3>
         <h3 
-            class="categorys bg-red-500 text-white px-4 py-2 rounded-lg font-medium cursor-pointer"
+            class="categorys bg-[#EF3D4D] text-white px-4 py-2 rounded-lg font-medium cursor-pointer"
         >
             Bebidas
         </h3>
     </div>
     <!-- END CATEGORYS -->
+    <!-- START MENU -->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!-- PRODUCT ITEM -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/mr-x.png" 
+                    alt="Mr. X"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">
+                        Mr. X
+                    </p>
+                    <p class="text-sm">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 11.00
+                        </p>
+                        <button 
+                            class="bg-[#EF3D4D] px-2 py-1 rounded add-to-cart-btn"
+                            data-name="Mr. X"
+                            data-price="11.00"
+                        >
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END PRODUCT ITEM-->
+
+            <!-- PRODUCT ITEM -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/mt-two.png" 
+                    alt="Mr. Two"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">
+                        Mr. Two
+                    </p>
+                    <p class="text-sm">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 12.50
+                        </p>
+                        <button 
+                            class="bg-[#EF3D4D] px-2 py-1 rounded add-to-cart-btn"
+                            data-name="Mr. Two"
+                            data-price="12.50"
+                        >
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END PRODUCT ITEM-->
+
+            <!-- PRODUCT ITEM -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/netsu.png" 
+                    alt="Netsu Netsu No Mi"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">
+                        Netsu Netsu No Mi
+                    </p>
+                    <p class="text-sm">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">
+                            R$ 14.50
+                        </p>
+                        <button 
+                            class="bg-[#EF3D4D] px-2 py-1 rounded add-to-cart-btn"
+                            data-name="Netsu Netsu No Mi"
+                            data-price="14.50"
+                        >
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END PRODUCT ITEM-->
+
+            <!-- PRODUCT ITEM -->
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/ope.png" 
+                    alt="Ope Ope No Mi"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold text-lg">
+                        Ope Ope No Mi
+                    </p>
+                    <p class="text-base font-medium">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-xl">
+                            R$ 16.50
+                        </p>
+                        <button 
+                            class="bg-[#EF3D4D] px-2 py-1 rounded add-to-cart-btn"
+                            data-name="Ope Ope No Mi"
+                            data-price="16.50"
+                        >
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END PRODUCT ITEM-->
+        </main>
 </body>
 </html>
